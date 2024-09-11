@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resp1_c</title>
+</head>
+<body>
+    
+<script>
+    const preco = Number(prompt("Bem vindo a DSB ELETRO"+"\n\n"+"Qual o valor do produto?"))
+    alert("A nossa loja conta com 2 formas de pagamento: " +"\n\n"+ "1. À vista com 10% de desconto." +"\n"+ "2. Em 3x sem juros." +"\n")
+    
+    const avista = preco - (preco*10/100) 
+    const parcelado = preco / 3
+    alert("Para este produto, que custa R$ "+preco.toFixed(2)+ " nas formas de pagamento: " +"\n\n"+ "1. À vista "+avista.toFixed(2) +"\n"+ "2. Em 3x de "+parcelado.toFixed(2) +"\n")
+
+</script>
+
+</body>
+</html>
