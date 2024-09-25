@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"></link>
+    <title>Exemplo 4.1</title>
+</head>
+
+<body>
+    <h1>Programa Situação do Aluno</h1>
+    <form>
+        <p>Nome do Aluno : 
+            <input aria-label="Nome do Aluno :" type="text" id="inNome" required>
+        </p>
+        <p> Nota 1 :
+            <input aria-label="Nota 1 :" type="number" id="Nota1" min="0" max="10" step="0.1" required>
+        </p>
+        <p>Nota 2 :
+            <input aria-label="Nota 2 :" type="number" id="Nota2" min="0" max="10" step="0.1" required>
+        </p>
+        <p>
+            <input type="submit" value="Exibir Média e Situação">
+        </p>
+    </form>
+    <h2 class="resp1"></h2>
+    <h3 class="resp2"></h3>
+
+    <script src="js/ex4_1.js"></script>
+</body>
+
+</html>
