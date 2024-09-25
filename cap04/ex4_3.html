@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo4.3 - Switch...Case</title>
+</head>
+<body>
+
+    <script>
+        const bairro = Prompt("Qual o bairro de entrega? ");
+        
+        let taxaEntrega;
+        
+        switch (bairro){
+            case "Centro":
+                taxaEntrega = 5.00
+                break
+            case "Fragata":
+            case "Três Vendas":
+                taxaEntrega = 7.00
+                break
+            case "Laranjal":
+                taxaEntrega = 10.00
+                break
+            default:
+                taxaEntrega = 8.00
+        }
+        alert("A Taxa de Entrega para "+bairro+", é: R$ " +taxaEntrega.toFixed(2)+" reais.")
+    </script>
+    
+</body>
+</html>
